@@ -4,9 +4,9 @@ import Router from 'vue-router'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
-import Home from './views/home.vue';
-import Login from './views/login.vue';
-import Suppliers from './views/suppliers.vue';
+import Home from '@/views/home.vue';
+import Login from '@/views/login.vue';
+import Suppliers from '@/views/suppliers.vue';
 
 Vue.use(Router);
 
