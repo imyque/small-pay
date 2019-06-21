@@ -58,7 +58,7 @@ export default {
       firebase.auth().signOut()
         .then(function() {
           self[mu.SET_CURRENT_USER](null);
-          this.$router.push('/login')
+          self.$router.push('/login')
         }).catch(function(error) {
           alert(error)
         });
