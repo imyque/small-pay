@@ -45,6 +45,7 @@ const router =  new Router({
 
 router.beforeEach((to, from, next) => {
 
+  //debugger
   const authUrl = to.matched.some(route => route.meta.auth )
 
   if ( !authUrl) {
@@ -55,11 +56,11 @@ router.beforeEach((to, from, next) => {
 
     if (user) {
       // user signed in
-      if (user && to.path == '/login')  {  //redirect to home if user is already logged in
-        next('/home')
-      } else { // else proceed
+      //if (user && to.path == '/login')  {  //redirect to home if user is already logged in
+      //  next('/home')
+      //} else { // else proceed
         next()
-      }
+      //}
     } else {
       // No user is signed in.
       next('login')
