@@ -8,7 +8,7 @@ import Home from './views/home.vue';
 import Login from './views/login.vue';
 import Suppliers from './views/suppliers.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 const router =  new Router({
   //mode: 'history',
