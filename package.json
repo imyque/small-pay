@@ -20,7 +20,6 @@
     "jquery": "^3.4.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vuelidate": "^0.7.4",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
