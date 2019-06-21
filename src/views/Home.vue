@@ -791,5 +791,9 @@ export default {
 .numeric {
   text-align: right;
 }
+
+.nav-tabs .nav-item a {
+  font-weight: bold;
+}
 </style>
 
