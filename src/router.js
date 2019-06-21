@@ -4,9 +4,9 @@ import Router from 'vue-router'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
-import Home from '@/views/home'
-import Login from '@/views/login'
-import Suppliers from '@/views/suppliers'
+import Home from './views/home.vue';
+import Login from './views/login.vue';
+import Suppliers from './views/suppliers.vue';
 
 Vue.use(Router)
 
@@ -41,7 +41,7 @@ const router =  new Router({
     },
     
   ]
-})
+});
 
 router.beforeEach((to, from, next) => {
 
@@ -65,7 +65,7 @@ router.beforeEach((to, from, next) => {
       next('login')
     }
   });
-})
+});
 
 
-export default router
+export default router;
