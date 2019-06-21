@@ -4,9 +4,9 @@ import Router from 'vue-router'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
-import Home from '@/views/home.vue'
-import Login from '@/views/login.vue'
-import Suppliers from '@/views/suppliers.vue'
+import Home from '@/views/home'
+import Login from '@/views/login'
+import Suppliers from '@/views/suppliers'
 
 Vue.use(Router)
 
@@ -45,7 +45,6 @@ const router =  new Router({
 
 router.beforeEach((to, from, next) => {
 
-  const currentUser = firebase.auth().currentUser
   const authUrl = to.matched.some(route => route.meta.auth )
 
   if ( !authUrl) {
